@@ -1,4 +1,4 @@
-//Require mysql npm packages
+// Set up MySQL connection.
 var mysql = require("mysql");
 //Create connection
 var connection = mysql.createConnection({
@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
-//Handle errors and log the MYSQL connection ID to the console
+// Make connection.
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
